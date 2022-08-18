@@ -1,4 +1,4 @@
-# dishes_mobile
+# Dishes mobile
 
 Application mobile pour les recettes de cuisine.
 
