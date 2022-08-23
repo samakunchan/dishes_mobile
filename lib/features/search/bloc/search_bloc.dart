@@ -1,7 +1,7 @@
 import 'package:bloc/bloc.dart';
 import 'package:equatable/equatable.dart';
 import 'package:dishes_mobile/core/core.dart';
-import 'package:dishes_mobile/search/profile.dart';
+import 'package:dishes_mobile/features/search/search.dart';
 
 part 'search_event.dart';
 part 'search_state.dart';

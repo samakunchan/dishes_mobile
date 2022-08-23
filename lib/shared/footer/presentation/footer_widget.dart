@@ -43,9 +43,9 @@ class _FooterWidgetState extends State<FooterWidget> {
       ),
       child: Center(
         child: Text(
-          'Copyright © 2022 Emvista - Tous droits réservés${_packageInfo.version.isEmpty
-                  ? 'NONE'
-                  : ' - Version ${_packageInfo.version}'}',
+          'Copyright © 2022 Samaapps ${_packageInfo.version.isEmpty
+              ? 'NONE'
+              : ' v${_packageInfo.version}'} - Tous droits réservés',
           style: const TextStyle(color: Colors.white),
         ),
       ),

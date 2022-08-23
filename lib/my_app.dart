@@ -1,25 +1,31 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:dishes_mobile/app_view.dart';
-import 'package:dishes_mobile/search/profile.dart';
-
+import 'features/features.dart';
 
 class MyApp extends StatelessWidget {
   const MyApp({
     Key? key,
-    required this.searchRepository,
   }) : super(key: key);
-  final SearchRepository searchRepository;
+
   @override
   Widget build(BuildContext context) {
-    return RepositoryProvider.value(
-      value: searchRepository,
-      child: BlocProvider(
-        create: (_) => SearchBloc(
-          searchRepository: searchRepository,
+    return MultiBlocProvider(
+      providers: <BlocProvider>[
+        BlocProvider<HomeBloc>(
+          create: (_) => HomeBloc(homeRepository: HomeRepository())
         ),
-        child: const AppView(),
-      ),
+        BlocProvider<SearchBloc>(
+          create: (_) => SearchBloc(searchRepository: SearchRepository())
+        ),
+        BlocProvider<CategoryBloc>(
+          create: (_) => CategoryBloc(categoryRepository: CategoryRepository())
+        ),
+        BlocProvider<AccountBloc>(
+          create: (_) => AccountBloc(accountRepository: AccountRepository())
+        )
+      ],
+      child: const AppView()
     );
   }
 }
