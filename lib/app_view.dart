@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:dishes_mobile/search/presentation/search_page.dart';
 
-import 'core/core.dart';
+import 'app/app.dart';
 
 class AppView extends StatefulWidget {
   const AppView({Key? key}) : super(key: key);
@@ -10,15 +9,20 @@ class AppView extends StatefulWidget {
 }
 
 class _AppViewState extends State<AppView> {
+
+  @override
+  void initState() {
+    super.initState();
+  }
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'dishes_mobile',
+      title: 'Dishes mobile',
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: const SearchPage(),
-      onGenerateRoute: Routes().generateRoute,
+      home: const AppWidget(),
     );
   }
 }
