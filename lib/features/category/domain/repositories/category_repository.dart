@@ -3,7 +3,7 @@ import 'package:http/http.dart' as http;
 import 'package:dishes_mobile/core/core.dart';
 import 'package:url_launcher/url_launcher.dart';
 
-class HomeRepository {
+class CategoryRepository {
   Future<bool> connectToGmail() async {
     return await launchUrl(Uri.parse(GmailPath.apiUrl),
         webOnlyWindowName: '_self');

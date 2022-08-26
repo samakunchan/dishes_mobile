@@ -1,6 +1,14 @@
 # DISHES MOBILE CHANGELOG
 
-# 👓 0.2.0 23/08/2022
+## 👓 0.3.0 26/08/2022
+- Tentative de formattage en Domain Driven Design
+- Ajout de 2 box animé dans la Home page
+- Ajout d'un "AnimateSwitcher" pour animer le changement des pages
+- Ajout d'un formulaire et d'un mock list sur la page search
+- Ajout d'une mock list de categorie pour la page categorie
+- Ajout d'une liste tile pour la page Account
+
+## 👓 0.2.0 23/08/2022
 - Ajout de 4 première pages de l'application
 - Ajout d'un dossier features pour les bloc
 - Suppresion des fichiers inutiles (Ex: router.dart)

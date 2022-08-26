@@ -1,3 +1,3 @@
-export 'data/repository/category_repository.dart';
-export 'bloc/category_bloc.dart';
-export 'presentation/category_widget.dart';
+export 'domain/repositories/category_repository.dart';
+export 'presentation/bloc/category_bloc.dart';
+export 'presentation/page/category_page.dart';
