@@ -1,12 +1,13 @@
 import 'dart:convert';
+import 'package:dishes_mobile/features/home/home.dart';
 import 'package:http/http.dart' as http;
 import 'package:dishes_mobile/core/core.dart';
 import 'package:url_launcher/url_launcher.dart';
 
-class AccountRepository {
+class HomeRepository extends DataHomeRepository{
   Future<bool> connectToGmail() async {
     return await launchUrl(Uri.parse(GmailPath.apiUrl),
-        webOnlyWindowName: '_self');
+      webOnlyWindowName: '_self');
   }
 
   Future<String> getTokens({required String code}) async {

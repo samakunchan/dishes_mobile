@@ -1,3 +1,3 @@
-export 'data/repository/account_repository.dart';
-export 'bloc/account_bloc.dart';
-export 'presentation/account_widget.dart';
+export 'domain/repositories/account_repository.dart';
+export 'presentation/bloc/account_bloc.dart';
+export 'presentation/page/account_page.dart';
